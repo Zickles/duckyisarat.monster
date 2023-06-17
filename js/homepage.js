@@ -6,6 +6,6 @@ window.addEventListener('keyup', (e) => {
   pressed.splice(-code.length - 1, pressed.length - code.length);
 
   if (pressed.join('').includes(code)) {
-    console.log("idk what this is");
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
   }
 })

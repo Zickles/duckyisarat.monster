@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  <h1>nothing to see here</h1>
+  <h1>nothing here :)</h1>
+  <script>
+    var code = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
+    var pressed = [];
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-code.length - 1, pressed.length - code.length);
+      if (pressed.join('').includes(code)) {
+        window.location.replace(window.location.pathname + " ducky")
+      }
+    }) </script>
+
 </body>
+
 </html>
